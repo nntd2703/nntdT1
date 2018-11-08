@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+}
+
+.topBar {
+  background-color: #005c13;
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.topBar .smallInformation ul {
+  margin-top: 6px;
+  padding: 0px;
+}
+.topBar .smallInformation ul li {
+  margin-right: 20px;
+}
+.topBar .smallInformation ul li p {
+  padding-right: 20px;
+  margin-left: 10px;
+  text-align: right;
+  display: inline-block;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.topBar .smallInformation ul li .last {
+  border-right: none;
+}
+.topBar .multiLanguage {
+  margin-top: 6px;
+}
+.topBar .multiLanguage .onoffswitch4 {
+  float: right;
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.topBar .multiLanguage .onoffswitch4-checkbox {
+  display: none;
+}
+.topBar .multiLanguage .onoffswitch4-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0.1px solid white;
+  border-radius: 0px;
+}
+.topBar .multiLanguage .onoffswitch4-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+.topBar .multiLanguage .onoffswitch4-inner:before,
+.topBar .multiLanguage .onoffswitch4-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 26px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.topBar .multiLanguage .onoffswitch4-inner:before {
+  content: "VN";
+  padding-left: 30px;
+  color: #ffffff;
+  content: url("./image/vn.png");
+}
+.topBar .multiLanguage .onoffswitch4-inner:after {
+  content: "EN";
+  padding-right: 30px;
+  content: url("./image/en.png");
+  color: #ffffff;
+  text-align: right;
+}
+.topBar .multiLanguage .onoffswitch4-switch {
+  display: block;
+  width: 25px;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 65px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+.topBar .multiLanguage .onoffswitch4-checkbox:checked + .onoffswitch4-label .onoffswitch4-inner {
+  margin-left: 0;
+}
+.topBar .multiLanguage .onoffswitch4-checkbox:checked + .onoffswitch4-label .onoffswitch4-switch {
+  right: 0px;
+}
+
+a,
+p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+ul li {
+  display: inline;
+  list-style: none;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
