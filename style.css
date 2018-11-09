@@ -44,7 +44,6 @@ body {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 0.1px solid white;
   border-radius: 0px;
 }
 .topBar .multiLanguage .onoffswitch4-inner {
