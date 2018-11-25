@@ -9,7 +9,7 @@ body {
   position: relative;
 }
 .topBar .smallInformation ul {
-  margin-top: 6px;
+  margin-top: 10px;
   padding: 0px;
 }
 .topBar .smallInformation ul li {
@@ -104,6 +104,271 @@ body {
 }
 .topBar .multiLanguage .onoffswitch4-checkbox:checked + .onoffswitch4-label .onoffswitch4-switch {
   right: 0px;
+}
+
+.navigationBar {
+  overflow: hidden;
+}
+.navigationBar .naviWithLogo {
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+.navigationBar .naviWithLogo .logo {
+  left: 0;
+  float: left;
+}
+.navigationBar .naviWithLogo .naviBar {
+  align-content: center;
+}
+.navigationBar .naviWithLogo .naviBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navigationBar .naviWithLogo .naviBar ul li {
+  float: left;
+}
+.navigationBar .naviWithLogo .naviBar ul li a {
+  display: block;
+  color: #444444;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigationBar .naviWithLogo .naviBar ul li:hover {
+  background-color: #111;
+}
+
+.slideShow {
+  letter-spacing: 0.05em;
+}
+.slideShow .btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #f7890b;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+  font-size: 12px;
+}
+.slideShow .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f7890b;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.slideShow .btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+.slideShow .btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+.slideShow .btn:hover {
+  color: #fff;
+  transition: color 0.1s linear 0s;
+}
+.slideShow .btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.slideShow .btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+.slideShow .slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.slideShow .slideshow .slideshow-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideShow .slideshow .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slideShow .slideshow .slide {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.slideShow .slideshow .slide.is-active {
+  display: block;
+}
+.slideShow .slideshow .slide.is-loaded {
+  opacity: 1;
+}
+.slideShow .slideshow .slide .caption {
+  padding-top: 200px;
+  width: 50%;
+}
+.slideShow .slideshow .slide .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: 1;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+.slideShow .slideshow .slide .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.slideShow .slideshow .slide .image {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.slideShow .slideshow .slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideShow .slideshow .slide .title {
+  margin: 0 auto 15px;
+  max-width: 1000px;
+  font-size: 65px;
+  font-weight: 500;
+}
+.slideShow .slideshow .slide .text {
+  margin: 0 auto;
+  max-width: 1000px;
+  line-height: 1.4;
+}
+.slideShow .slideshow .slide .text p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.slideShow .slideshow .slide .btn {
+  margin: 15px 0 0;
+  border-color: #f7890b;
+}
+.slideShow .slideshow .slide .btn::before {
+  background: #f7890b;
+}
+.slideShow .slideshow .pagination {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  cursor: default;
+  z-index: 2;
+  text-align: center;
+  display: block;
+}
+.slideShow .slideshow .pagination .item {
+  display: inline-block;
+  padding: 15px 5px;
+  position: relative;
+  width: 46px;
+  height: 32px;
+  cursor: pointer;
+  text-indent: -999em;
+  z-index: 1;
+}
+.slideShow .slideshow .pagination .item + .page {
+  margin-left: -2px;
+}
+.slideShow .slideshow .pagination .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 36px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+.slideShow .slideshow .pagination .item::after {
+  width: 0;
+  background: #fff;
+  z-index: 2;
+  transition: width 0.2s ease;
+}
+.slideShow .slideshow .pagination .item:hover::before, .slideShow .slideshow .pagination .item.is-active::before {
+  background-color: #fff;
+}
+.slideShow .slideshow .arrows .arrow {
+  margin: -33px 0 0;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+.slideShow .slideshow .arrows .prev {
+  left: 30px;
+}
+.slideShow .slideshow .arrows .prev:hover .svg {
+  left: -10px;
+}
+.slideShow .slideshow .arrows .next {
+  right: 30px;
+}
+.slideShow .slideshow .arrows .next:hover .svg {
+  left: 10px;
+}
+.slideShow .slideshow .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 14px;
+  height: 26px;
+  fill: #fff;
+  transition: left 0.2s ease;
 }
 
 a,
