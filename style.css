@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 h1 {
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 3.5vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -10,8 +10,17 @@ h1 {
   color: #444444;
 }
 
+h3 {
+  font-size: 1.7vw;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 .topBar {
@@ -74,7 +83,7 @@ body {
   height: 30px;
   padding: 0;
   line-height: 26px;
-  font-size: 14px;
+  font-size: 1.8vw;
   color: white;
   font-family: Trebuchet, Arial, sans-serif;
   font-weight: bold;
@@ -117,54 +126,16 @@ body {
   right: 0px;
 }
 
-.navigationBar {
-  overflow: hidden;
+.navigationBar .navBarNonPadding,
+.navigationBar .navbar {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-.navigationBar .naviWithLogo {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.navigationBar .naviWithLogo .logo {
-  left: 0;
-  float: left;
-}
-.navigationBar .naviWithLogo .naviBar {
-  align-content: center;
-  float: left;
-}
-.navigationBar .naviWithLogo .naviBar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.navigationBar .naviWithLogo .naviBar ul li {
-  float: left;
-}
-.navigationBar .naviWithLogo .naviBar ul li a {
+.navigationBar a {
   text-transform: uppercase;
-  display: block;
-  text-align: center;
-  padding: 18px 15px;
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.8;
-  letter-spacing: normal;
+  font-size: 1.2vw;
   color: #222222;
-}
-.navigationBar .naviWithLogo .search {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  height: 48px;
-}
-.navigationBar .naviWithLogo .search img {
-  padding-right: 50px;
+  font-weight: 400;
 }
 
 .slideShow {
@@ -183,7 +154,7 @@ body {
   text-indent: 2px;
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
-  font-size: 12px;
+  font-size: 0.8vw;
 }
 .slideShow .btn::before {
   content: "";
@@ -306,7 +277,7 @@ body {
 .slideShow .slideshow .slide .title {
   margin: 0 auto 15px;
   max-width: 1000px;
-  font-size: 65px;
+  font-size: 4.5vw;
   font-weight: 500;
 }
 .slideShow .slideshow .slide .text {
@@ -315,12 +286,12 @@ body {
   line-height: 1.4;
 }
 .slideShow .slideshow .slide .text p {
-  font-size: 14px;
+  font-size: 1.1vw;
   font-weight: 200;
 }
 .slideShow .slideshow .slide .btn {
   margin: 15px 0 0;
-  border-color: #f7890b;
+  background-color: #f7890b;
 }
 .slideShow .slideshow .slide .btn::before {
   background: #f7890b;
@@ -433,7 +404,7 @@ body {
 .panelExpertise .expertiseContent .content {
   margin-bottom: 40px;
   width: 330px;
-  height: 215px;
+  height: 185px;
   text-align: center;
   position: relative;
 }
@@ -445,7 +416,7 @@ body {
   width: 242px;
   height: 30px;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -464,9 +435,7 @@ body {
   padding-bottom: 100px;
 }
 .contactForm .form {
-  width: 100%;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
 }
 .contactForm .form .imageContactForm {
   height: 480px;
@@ -482,7 +451,7 @@ body {
   width: 480px;
   height: 50px;
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 3.1vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -500,7 +469,7 @@ body {
 }
 .contactForm .form .inputContact .form-group input,
 .contactForm .form .inputContact .form-group textarea {
-  font-size: 15px;
+  font-size: 1vw;
 }
 .contactForm .form .inputContact .form-group textarea.form-control {
   height: auto;
@@ -514,7 +483,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2.6vw;
   margin: 4px 2px;
   cursor: pointer;
   font-family: Roboto;
@@ -523,49 +492,43 @@ body {
 .contactForm .form .inputContact .button a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1vw;
 }
 
 .panelContent {
+  height: 450px;
   position: relative;
-}
-.panelContent img {
-  max-width: 100%;
-  max-height: 100%;
+  background: url("./image/panelContent.png") center center no-repeat;
 }
 .panelContent .panelGradient {
   width: 100%;
 }
-.panelContent .panelGradient .content {
+.panelContent .content {
+  height: 20%;
   text-align: center;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 0%);
   z-index: 2;
 }
-.panelContent .panelGradient .content h1 {
+.panelContent .content h1 {
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 3.5vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.1;
   letter-spacing: normal;
-  text-align: center;
   color: #ffffff;
 }
-.panelContent .panelGradient .content p {
+.panelContent .content p {
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.55;
   letter-spacing: normal;
-  text-align: center;
   color: #ffffff;
 }
-.panelContent .panelGradient .content .button {
+.panelContent .content .button {
   border-radius: 3px;
   background-color: #f7890b;
   border: none;
@@ -574,7 +537,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.1vw;
   margin: 4px 2px;
   cursor: pointer;
   font-family: Roboto;
@@ -584,23 +547,19 @@ body {
 .panelContent::after {
   content: "";
   position: absolute;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
-  z-index: 1;
 }
 
 .panelFounder {
-  padding: 75px 0px;
-}
-.panelFounder .content {
-  padding-top: 55px;
+  padding: 50px 0px;
 }
 .panelFounder .content h1 {
   font-family: Roboto;
-  font-size: 42px;
+  font-size: 3vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -613,7 +572,7 @@ body {
   width: 500px;
   height: 215px;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -630,7 +589,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.1vw;
   margin: 4px 2px;
   cursor: pointer;
   font-family: Roboto;
@@ -666,7 +625,7 @@ body {
 }
 .footer .footerContent .detailContent .fa {
   padding: 9px;
-  font-size: 12px;
+  font-size: 0.8vw;
   width: 30px;
   text-align: center;
   text-decoration: none;
@@ -695,7 +654,7 @@ body {
 .footer .footerContent .naviFooter ul li {
   padding: 12px;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.1vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -726,7 +685,7 @@ body {
 a,
 p {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8vw;
 }
 
 ul li {
