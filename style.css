@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 h1 {
   font-family: Roboto;
-  font-size: 3.5vw;
+  font-size: 3.5rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -11,7 +11,23 @@ h1 {
 }
 
 h3 {
-  font-size: 1.7vw;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 95% !important;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 85% !important;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 80% !important;
+  }
 }
 
 body {
@@ -83,7 +99,7 @@ body {
   height: 30px;
   padding: 0;
   line-height: 26px;
-  font-size: 1.8vw;
+  font-size: 1.8rem;
   color: white;
   font-family: Trebuchet, Arial, sans-serif;
   font-weight: bold;
@@ -133,7 +149,7 @@ body {
 }
 .navigationBar a {
   text-transform: uppercase;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   color: #222222;
   font-weight: 400;
 }
@@ -154,7 +170,7 @@ body {
   text-indent: 2px;
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
 }
 .slideShow .btn::before {
   content: "";
@@ -275,9 +291,7 @@ body {
   align-items: center;
 }
 .slideShow .slideshow .slide .title {
-  margin: 0 auto 15px;
-  max-width: 1000px;
-  font-size: 4.5vw;
+  font-size: 4.5rem;
   font-weight: 500;
 }
 .slideShow .slideshow .slide .text {
@@ -286,7 +300,7 @@ body {
   line-height: 1.4;
 }
 .slideShow .slideshow .slide .text p {
-  font-size: 1.1vw;
+  font-size: 1.1rem;
   font-weight: 200;
 }
 .slideShow .slideshow .slide .btn {
@@ -376,9 +390,6 @@ body {
   width: 100%;
   padding: 50px;
 }
-.panelServies .serviceContent {
-  width: 100%;
-}
 .panelServies .serviceContent .content {
   text-align: center;
 }
@@ -408,15 +419,11 @@ body {
   text-align: center;
   position: relative;
 }
-.panelExpertise .expertiseContent .content img {
-  max-width: 100%;
-  max-height: 100%;
-}
 .panelExpertise .expertiseContent .content h3 {
   width: 242px;
   height: 30px;
   font-family: Roboto;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -431,27 +438,17 @@ body {
 }
 
 .contactForm {
-  margin-top: 60px;
-  padding-bottom: 100px;
+  padding: 3rem 0;
 }
 .contactForm .form {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
-.contactForm .form .imageContactForm {
-  height: 480px;
-}
-.contactForm .form .imageContactForm img {
-  max-width: 100%;
-  max-height: 100%;
-}
 .contactForm .form .inputContact {
-  padding-top: 50px;
+  padding-left: 3rem;
 }
 .contactForm .form .inputContact h1 {
-  width: 480px;
-  height: 50px;
   font-family: Roboto;
-  font-size: 3.1vw;
+  font-size: 3.1rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -461,7 +458,6 @@ body {
 }
 .contactForm .form .inputContact .form-group {
   font-family: Roboto;
-  width: 500px;
   border-radius: 3px;
 }
 .contactForm .form .inputContact .form-group .form-control {
@@ -469,34 +465,30 @@ body {
 }
 .contactForm .form .inputContact .form-group input,
 .contactForm .form .inputContact .form-group textarea {
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .contactForm .form .inputContact .form-group textarea.form-control {
   height: auto;
 }
-.contactForm .form .inputContact .button {
-  border-radius: 3px;
-  background-color: #f7890b;
-  border: none;
-  color: white;
-  padding: 4px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2.6vw;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: bold;
+@media (max-width: 768px) {
+  .contactForm .form {
+    padding: 2rem 2rem;
+  }
+  .contactForm .form .inputContact {
+    padding-top: 1.5rem;
+    padding-left: 0;
+  }
 }
-.contactForm .form .inputContact .button a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1vw;
+@media (max-width: 994px) {
+  .contactForm .form .inputContact h1 {
+    font-size: 2rem;
+  }
+  .contactForm .form .inputContact .form-group .form-control {
+    height: calc(2.25rem - 5px);
+  }
 }
 
 .panelContent {
-  height: 450px;
   position: relative;
   background: url("./image/panelContent.png") center center no-repeat;
 }
@@ -504,23 +496,16 @@ body {
   width: 100%;
 }
 .panelContent .content {
-  height: 20%;
+  height: 0;
   text-align: center;
   z-index: 2;
 }
 .panelContent .content h1 {
-  font-family: Roboto;
-  font-size: 3.5vw;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
   color: #ffffff;
 }
 .panelContent .content p {
   font-family: Roboto;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -528,20 +513,10 @@ body {
   letter-spacing: normal;
   color: #ffffff;
 }
-.panelContent .content .button {
-  border-radius: 3px;
-  background-color: #f7890b;
-  border: none;
-  color: white;
-  padding: 4px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.1vw;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: bold;
+@media (max-width: 1200px) {
+  .panelContent .content {
+    height: auto;
+  }
 }
 
 .panelContent::after {
@@ -555,56 +530,28 @@ body {
 }
 
 .panelFounder {
-  padding: 50px 0px;
-}
-.panelFounder .content h1 {
-  font-family: Roboto;
-  font-size: 3vw;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #444444;
-}
-.panelFounder .content p {
-  margin-top: 20px;
-  width: 500px;
-  height: 215px;
-  font-family: Roboto;
-  font-size: 1vw;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.55;
-  letter-spacing: normal;
-  color: #222222;
-}
-.panelFounder .content .button {
-  border-radius: 3px;
-  background-color: #f7890b;
-  border: none;
-  color: white;
-  padding: 4px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.1vw;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: bold;
+  padding-top: 50px;
 }
 .panelFounder .image {
-  float: right;
-  width: 400px;
-  height: 450px;
-}
-.panelFounder .image img {
-  max-width: 100%;
-  max-height: 100%;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .panelFounder {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .panelFounder .image {
+    padding-bottom: 30px;
+  }
+  .panelFounder .jumbotron {
+    padding-bottom: 0;
+  }
+  .panelFounder .aboutFounder {
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+}
 .footer {
   box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -625,7 +572,7 @@ body {
 }
 .footer .footerContent .detailContent .fa {
   padding: 9px;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   width: 30px;
   text-align: center;
   text-decoration: none;
@@ -654,7 +601,7 @@ body {
 .footer .footerContent .naviFooter ul li {
   padding: 12px;
   font-family: Roboto;
-  font-size: 1.1vw;
+  font-size: 1.1rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -682,10 +629,29 @@ body {
   border-right: none;
 }
 
+.btn {
+  background-color: #f7890b;
+  color: white;
+  font-weight: 500;
+}
+
+.jumbotron {
+  background: transparent !important;
+}
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron p, .jumbotron a {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 a,
 p {
   font-weight: 500;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
 }
 
 ul li {
