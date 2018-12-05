@@ -206,6 +206,13 @@ body {
       }
     }
   }
+  .btn:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
+
+  }
   .slideshow {
     overflow: hidden;
     position: relative;
@@ -522,6 +529,12 @@ body {
       line-height: 1.55;
       letter-spacing: normal;
       color: #ffffff;
+    }
+    a:hover {
+      cursor: pointer;
+      transition: 0.2s;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
     }
   }
   @media (max-width: 1200px) {
