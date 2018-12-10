@@ -59,6 +59,11 @@ body {
   color: white;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 480px) {
+  .topBar .smallInformation ul li p {
+    display: none;
+  }
+}
 .topBar .smallInformation ul li .last {
   border-right: none;
 }
@@ -142,6 +147,11 @@ body {
   right: 0px;
 }
 
+@media (max-width: 768px) {
+  .navigationBar, .topBar {
+    padding: 0 1rem;
+  }
+}
 .navigationBar .navBarNonPadding,
 .navigationBar .navbar {
   padding-right: 0px;
@@ -152,6 +162,22 @@ body {
   font-size: 1.2rem;
   color: #222222;
   font-weight: 400;
+}
+.navigationBar .dropdown-submenu {
+  position: relative;
+}
+.navigationBar .dropdown-submenu > a:after {
+  content: ">";
+  float: right;
+}
+.navigationBar .dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100% !important;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.navigationBar .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
 
 .slideShow {
@@ -496,13 +522,15 @@ body {
 
 .panelContent {
   position: relative;
-  background: url("./image/panelContent.png") center center no-repeat;
 }
 .panelContent .panelGradient {
   width: 100%;
 }
 .panelContent .content {
-  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
 }
@@ -510,7 +538,7 @@ body {
   color: #ffffff;
 }
 .panelContent .content p {
-  font-family: Roboto;
+  text-overflow: ellipsis;
   font-size: 1rem;
   font-weight: 300;
   font-style: normal;
@@ -526,8 +554,19 @@ body {
   box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
 }
 @media (max-width: 1200px) {
+  .panelContent .content p, .panelContent .content a {
+    font-size: 85% !important;
+  }
+}
+@media (max-width: 850px) {
+  .panelContent .content p, .panelContent .content a {
+    font-size: 70% !important;
+  }
+}
+@media (max-width: 1200px) {
   .panelContent .content {
     height: auto;
+    width: 90%;
   }
 }
 
@@ -554,7 +593,7 @@ body {
     padding-bottom: 0;
   }
   .panelFounder .image {
-    padding-bottom: 30px;
+    padding: 0rem 1rem 1rem 1rem;
   }
   .panelFounder .jumbotron {
     padding-bottom: 0;
@@ -637,14 +676,50 @@ body {
   color: #005c13;
   border-right: 1px solid #005c13;
 }
+@media (max-width: 480px) {
+  .footer .footerContent .smallInformation ul li p {
+    display: none;
+  }
+}
 .footer .footerContent .smallInformation ul li .last {
   border-right: none;
+}
+@media (max-width: 992px) {
+  .footer .footerContent .detailContent {
+    padding-right: 0;
+  }
+  .footer .footerContent .detailContent,
+.footer .footerContent .map {
+    float: none;
+  }
+}
+@media (max-width: 480px) {
+  .footer .footerContent {
+    text-align: center;
+  }
 }
 
 .btn {
   background-color: #f7890b;
   color: white;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 994px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
 }
 
 .jumbotron {

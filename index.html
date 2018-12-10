@@ -15,7 +15,6 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="./style.css" media="screen"/>
 </head>
 
@@ -27,13 +26,13 @@
                 <div class="smallInformation col-md-9 col-sm-9">
                     <ul>
                         <li><img src="./image/fill-1.svg" alt="">
-                            <p>sevenhillsltd@gmail.com</p>
+                            <p class="companyInformation">sevenhillsltd@gmail.com</p>
                         </li>
                         <li><img src="./image/fill-1.svg" alt="">
-                            <p>+84 875 789 287</p>
+                            <p class="companyInformation">+84 875 789 287</p>
                         </li>
                         <li><img src="./image/fill-1.svg" alt="">
-                            <p class="last">9 AM - 6 PM</p>
+                            <p class="last companyInformation">9 AM - 6 PM</p>
                         </li>
                     </ul>
                 </div>
@@ -65,8 +64,34 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">SERVICE</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our expertise</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Our
+                                product</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                <li><a class="dropdown-item" href="#">level 1</a></li>
+                                <li><a class="dropdown-item" href="#">level 1</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" tabindex="-1" href="#">
+                                        level 1
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" tabindex="-1" href="#">level 2</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="#">
+                                                level 2
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">level 2</a></li>
+                                        <li><a class="dropdown-item" href="#">level 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
@@ -307,9 +332,10 @@
     </div>
 </div>
 <div class="panelContent">
-    <div class="container d-flex h-100">
-        <div class="row justify-content-center align-self-center">
-            <div class="content">
+    <img src="./image/panelContent.png">
+    <div class="container">
+        <div class="row">
+            <div class="content justify-content-center align-self-center">
                 <h1>About Seven Hills Trading LTD Company</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a
                     page when looking at its layout. The point of using Lorem Ipsum is that it has a
@@ -377,13 +403,13 @@
                     <div class="smallInformation">
                         <ul>
                             <li><img src="./image/callIcon.svg" alt="">
-                                <p>sevenhillsltd@gmail.com</p>
+                                <p class="companyInformation">sevenhillsltd@gmail.com</p>
                             </li>
                             <li><img src="./image/callIcon.svg" alt="">
-                                <p>+84 875 789 287</p>
+                                <p class="companyInformation">+84 875 789 287</p>
                             </li>
                             <li><img src="./image/callIcon.svg" alt="">
-                                <p class="last">9 AM - 6 PM</p>
+                                <p class="last companyInformation">9 AM - 6 PM</p>
                             </li>
                         </ul>
                     </div>
