@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 h1 {
   font-family: Roboto;
   font-size: 3.5rem;
@@ -41,17 +46,16 @@ body {
 
 .topBar {
   background-color: #005c13;
+  padding-top: 0.6rem;
   position: relative;
 }
-.topBar .smallInformation ul {
-  margin-bottom: 0;
-  margin-top: 10px;
-  padding: 0px;
-}
-.topBar .smallInformation ul li {
+.topBar ul li {
   margin-right: 20px;
 }
-.topBar .smallInformation ul li p {
+.topBar ul li .nav-link {
+  padding: 0;
+}
+.topBar ul li p {
   padding-right: 20px;
   margin-left: 10px;
   text-align: right;
@@ -60,11 +64,11 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 480px) {
-  .topBar .smallInformation ul li p {
+  .topBar ul li p {
     display: none;
   }
 }
-.topBar .smallInformation ul li .last {
+.topBar ul li .last {
   border-right: none;
 }
 .topBar .multiLanguage {
@@ -417,10 +421,11 @@ body {
 
 .panelServies {
   text-align: center;
+  padding-bottom: 5rem;
 }
 .panelServies .title {
   width: 100%;
-  padding: 50px;
+  padding: 5rem;
 }
 .panelServies .serviceContent .content {
   text-align: center;
@@ -442,110 +447,83 @@ body {
   opacity: 0.7;
 }
 .panelExpertise .expertiseContent {
+  overflow-wrap: break-word;
   width: 100%;
 }
-.panelExpertise .expertiseContent .content {
-  margin-bottom: 40px;
-  width: 330px;
-  height: 185px;
-  text-align: center;
+.panelExpertise .expertiseContent .col {
   position: relative;
+  padding-bottom: 3rem;
 }
-.panelExpertise .expertiseContent .content h3 {
-  width: 242px;
-  height: 30px;
+.panelExpertise .expertiseContent .col h3 {
   font-family: Roboto;
   font-size: 1.3rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.contactForm {
+.contactPanel {
   padding: 3rem 0;
+  height: auto;
 }
-.contactForm .form {
+.contactPanel .contactForm {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
-.contactForm .form .inputContact {
-  padding-left: 3rem;
+.contactPanel .imageContact,
+.contactPanel .workWithUs {
+  padding-right: 0;
+  padding-left: 0;
 }
-.contactForm .form .inputContact h1 {
-  font-family: Roboto;
+.contactPanel .workWithUs .jumbotron {
+  padding-bottom: 0 !important;
+}
+.contactPanel .workWithUs .jumbotron h1 {
   font-size: 3.1rem;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #444444;
 }
-.contactForm .form .inputContact .form-group {
+.contactPanel .workWithUs .jumbotron .form-group {
   font-family: Roboto;
   border-radius: 3px;
+  padding: 0;
 }
-.contactForm .form .inputContact .form-group .form-control {
-  height: calc(2.25rem + 15px);
-}
-.contactForm .form .inputContact .form-group input,
-.contactForm .form .inputContact .form-group textarea {
+.contactPanel .workWithUs .jumbotron .form-group input,
+.contactPanel .workWithUs .jumbotron .form-group textarea {
   font-size: 1rem;
 }
-.contactForm .form .inputContact .form-group textarea.form-control {
+.contactPanel .workWithUs .jumbotron .form-group textarea.form-control {
   height: auto;
 }
 @media (max-width: 768px) {
-  .contactForm .form {
+  .contactPanel .workWithUs .jumbotron {
     padding: 2rem 2rem;
   }
-  .contactForm .form .inputContact {
+  .contactPanel .workWithUs .jumbotron .inputContact {
     padding-top: 1.5rem;
     padding-left: 0;
   }
 }
 @media (max-width: 994px) {
-  .contactForm .form .inputContact h1 {
+  .contactPanel .workWithUs .jumbotron .inputContact h1 {
     font-size: 2rem;
-  }
-  .contactForm .form .inputContact .form-group .form-control {
-    height: calc(2.25rem - 5px);
   }
 }
 
 .panelContent {
   position: relative;
-}
-.panelContent .panelGradient {
-  width: 100%;
+  display: block;
 }
 .panelContent .content {
   position: absolute;
+  visibility: visible;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
 }
-.panelContent .content h1 {
-  color: #ffffff;
-}
 .panelContent .content p {
-  text-overflow: ellipsis;
   font-size: 1rem;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.55;
-  letter-spacing: normal;
-  color: #ffffff;
 }
 .panelContent .content a:hover {
   cursor: pointer;
@@ -569,8 +547,32 @@ body {
     width: 90%;
   }
 }
+@media (max-width: 480px) {
+  .panelContent .content {
+    display: none;
+  }
+}
+
+.contentMobile {
+  display: none;
+  text-align: center;
+}
+@media (max-width: 479px) {
+  .contentMobile {
+    display: block;
+    padding: 2rem 2rem;
+  }
+}
+.contentMobile .jumbotron {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.contentMobile .jumbotron h1 {
+  font-size: 1.3rem;
+}
 
 .panelContent::after {
+  width: 105%;
   content: "";
   position: absolute;
   top: 0;
@@ -581,16 +583,16 @@ body {
 }
 
 .panelFounder {
-  padding-top: 50px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .panelFounder .image {
   text-align: center;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .panelFounder {
-    padding-top: 0;
-    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0rem;
   }
   .panelFounder .image {
     padding: 0rem 1rem 1rem 1rem;
@@ -599,10 +601,10 @@ body {
     padding-bottom: 0;
   }
   .panelFounder .aboutFounder {
-    text-align: center;
-    padding: 0rem 2rem;
+    padding: 2rem 2rem;
   }
 }
+
 .footer {
   box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -744,80 +746,6 @@ p {
 ul li {
   display: inline;
   list-style: none;
-}
-
-.col,
-.col-1,
-.col-10,
-.col-11,
-.col-12,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-auto,
-.col-lg,
-.col-lg-1,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-auto,
-.col-md,
-.col-md-1,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-auto,
-.col-sm,
-.col-sm-1,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-auto,
-.col-xl,
-.col-xl-1,
-.col-xl-10,
-.col-xl-11,
-.col-xl-12,
-.col-xl-2,
-.col-xl-3,
-.col-xl-4,
-.col-xl-5,
-.col-xl-6,
-.col-xl-7,
-.col-xl-8,
-.col-xl-9,
-.col-xl-auto {
-  padding-right: 0;
-  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
