@@ -157,8 +157,21 @@ body {
     padding: 0 1rem;
   }
 }
+.navigationBar .navbar {
+  padding-left: 0;
+}
+.navigationBar .nav-item {
+  padding: 0 2rem;
+}
 .navigationBar ul li {
   display: block;
+}
+.navigationBar ul li a {
+  text-transform: uppercase;
+  color: #222222 !important;
+  font-family: Roboto;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 .navigationBar .dropdown-submenu {
   position: relative;
