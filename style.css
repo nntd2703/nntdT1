@@ -152,36 +152,28 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navigationBar, .topBar {
+  .navigationBar,
+.topBar {
     padding: 0 1rem;
   }
 }
-.navigationBar .navBarNonPadding,
-.navigationBar .navbar {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-.navigationBar a {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #222222;
-  font-weight: 400;
+.navigationBar ul li {
+  display: block;
 }
 .navigationBar .dropdown-submenu {
   position: relative;
 }
-.navigationBar .dropdown-submenu > a:after {
-  content: ">";
-  float: right;
+.navigationBar .dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.8em;
 }
-.navigationBar .dropdown-submenu > .dropdown-menu {
+.navigationBar .dropdown-submenu .dropdown-menu {
   top: 0;
-  left: 100% !important;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-.navigationBar .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 
 .slideShow {
@@ -532,12 +524,14 @@ body {
   box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
 }
 @media (max-width: 1200px) {
-  .panelContent .content p, .panelContent .content a {
+  .panelContent .content p,
+.panelContent .content a {
     font-size: 85% !important;
   }
 }
 @media (max-width: 850px) {
-  .panelContent .content p, .panelContent .content a {
+  .panelContent .content p,
+.panelContent .content a {
     font-size: 70% !important;
   }
 }
@@ -727,7 +721,13 @@ body {
 .jumbotron {
   background: transparent !important;
 }
-.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron p, .jumbotron a {
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron p,
+.jumbotron a {
   font-family: Roboto;
   font-weight: 300;
 }
