@@ -166,12 +166,19 @@ body {
 .navigationBar ul li {
   display: block;
 }
-.navigationBar ul li a {
+.navigationBar .nav-link,
+.navigationBar .dropdown-item {
   text-transform: uppercase;
   color: #222222 !important;
   font-family: Roboto;
   font-size: 1.1rem;
   font-weight: 400;
+}
+@media (max-width: 1025px) {
+  .navigationBar .nav-link,
+.navigationBar .dropdown-item {
+    font-size: 80%;
+  }
 }
 .navigationBar .dropdown-submenu {
   position: relative;
@@ -187,6 +194,22 @@ body {
   left: 100%;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
+}
+.navigationBar .imgSearch {
+  display: none;
+}
+@media (min-width: 992px) {
+  .navigationBar .imgSearch {
+    display: block;
+  }
+}
+.navigationBar .imgSearchMobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  .navigationBar .imgSearchMobile {
+    display: block;
+  }
 }
 
 .slideShow {
@@ -440,7 +463,7 @@ body {
 }
 
 .panelExpertise {
-  background-image: url("./image/group-11.png");
+  background-image: url("./image/backgroundProduct.jpg");
 }
 .panelExpertise .header {
   width: 100%;
@@ -579,7 +602,7 @@ body {
 }
 
 .panelContent::after {
-  width: 105%;
+  width: 100%;
   content: "";
   position: absolute;
   top: 0;
@@ -612,53 +635,67 @@ body {
   }
 }
 
-.footer {
+footer {
   box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
-.footer .footerContent {
-  padding: 15px;
+footer .footerContent {
+  padding-top: 15px;
   margin: 0 auto;
 }
-.footer .footerContent .detailContent,
-.footer .footerContent .map {
-  float: left;
+footer .footerContent .detailContent .jumbotron {
+  padding: 1rem;
+  margin: 0;
 }
-.footer .footerContent .detailContent {
-  padding-left: 20px;
-}
-.footer .footerContent .detailContent .logo {
+footer .footerContent .detailContent .jumbotron .logo {
   padding-right: 20px;
 }
-.footer .footerContent .detailContent .fa {
-  padding: 9px;
-  font-size: 0.8rem;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 23px 5px;
-  border-radius: 50%;
+footer .footerContent .detailContent .jumbotron a {
+  padding: 0 0.5rem;
 }
-.footer .footerContent .detailContent .fa:hover {
-  opacity: 0.7;
+footer .footerContent .detailContent .smallInformation ul {
+  margin-top: 10px;
+  padding: 0px;
 }
-.footer .footerContent .detailContent .fa-facebook {
-  background: #3B5998;
-  color: white;
+footer .footerContent .detailContent .smallInformation ul li {
+  padding-left: 10px;
 }
-.footer .footerContent .detailContent .fa-twitter {
-  background: #55ACEE;
-  color: white;
+footer .footerContent .detailContent .smallInformation ul li p {
+  padding-right: 20px;
+  margin-left: 10px;
+  padding-top: 4px;
+  text-align: right;
+  display: inline-block;
+  color: #005c13;
+  border-right: 1px solid #005c13;
 }
-.footer .footerContent .detailContent .fa-instagram {
-  background: #125688;
-  color: white;
+@media (max-width: 480px) {
+  footer .footerContent .detailContent .smallInformation ul li p {
+    display: none;
+  }
 }
-.footer .footerContent .naviFooter ul {
+footer .footerContent .detailContent .smallInformation ul li .last {
+  border-right: none;
+}
+@media (max-width: 992px) {
+  footer .footerContent .detailContent .detailContent {
+    padding-right: 0;
+  }
+  footer .footerContent .detailContent .detailContent,
+footer .footerContent .detailContent .map {
+    float: none;
+  }
+}
+@media (max-width: 480px) {
+  footer .footerContent .detailContent {
+    text-align: center;
+  }
+}
+footer .footerContent .naviFooter ul {
   margin-left: 0px !important;
   padding-left: 0px !important;
 }
-.footer .footerContent .naviFooter ul li {
+footer .footerContent .naviFooter ul li {
   padding: 12px;
   font-family: Roboto;
   font-size: 1.1rem;
@@ -669,42 +706,16 @@ body {
   letter-spacing: normal;
   color: #222222;
 }
-.footer .footerContent .smallInformation ul {
-  margin-top: 10px;
-  padding: 0px;
-}
-.footer .footerContent .smallInformation ul li {
-  padding-left: 10px;
-}
-.footer .footerContent .smallInformation ul li p {
-  padding-right: 20px;
-  margin-left: 10px;
-  padding-top: 4px;
-  text-align: right;
-  display: inline-block;
-  color: #005c13;
-  border-right: 1px solid #005c13;
-}
-@media (max-width: 480px) {
-  .footer .footerContent .smallInformation ul li p {
+@media (max-width: 991px) {
+  footer .footerContent .naviFooter,
+footer .footerContent .smallInformation {
     display: none;
   }
-}
-.footer .footerContent .smallInformation ul li .last {
-  border-right: none;
-}
-@media (max-width: 992px) {
-  .footer .footerContent .detailContent {
-    padding-right: 0;
+  footer .footerContent .detailContent {
+    padding: 0;
   }
-  .footer .footerContent .detailContent,
-.footer .footerContent .map {
-    float: none;
-  }
-}
-@media (max-width: 480px) {
-  .footer .footerContent {
-    text-align: center;
+  footer .footerContent .detailContent .logo {
+    padding: 0;
   }
 }
 
