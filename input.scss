@@ -493,8 +493,15 @@ body {
     }
   }
   .slideProduct {
+    display: none;
     @media (max-width: 767px) {
       display: block;
+    }
+    .product {
+      h3 {
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+      }
     }
   }
 }
