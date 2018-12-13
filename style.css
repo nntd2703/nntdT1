@@ -1,9 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
-.container {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 h1 {
   font-family: Roboto;
   font-size: 3.5rem;
@@ -63,7 +58,10 @@ body {
   color: white;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .topBar ul li .nav-link {
+    padding: 0.5rem;
+  }
   .topBar ul li p {
     display: none;
   }
@@ -162,6 +160,12 @@ body {
 }
 .navigationBar .nav-item {
   padding: 0 2rem;
+  text-align: center;
+}
+@media (max-width: 1216px) {
+  .navigationBar .nav-item {
+    padding: 0 1rem;
+  }
 }
 .navigationBar ul li {
   display: block;
@@ -173,12 +177,6 @@ body {
   font-family: Roboto;
   font-size: 1.1rem;
   font-weight: 400;
-}
-@media (max-width: 1025px) {
-  .navigationBar .nav-link,
-.navigationBar .dropdown-item {
-    font-size: 80%;
-  }
 }
 .navigationBar .dropdown-submenu {
   position: relative;
@@ -449,17 +447,17 @@ body {
 
 .panelServies {
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .panelServies .title {
   width: 100%;
   padding: 5rem;
 }
-.panelServies .serviceContent .content {
+.panelServies .col {
   text-align: center;
 }
-.panelServies .serviceContent .content h3 {
-  padding: 30px 0px;
+.panelServies .col h3 {
+  padding: 2rem 0;
 }
 
 .panelExpertise {
@@ -490,10 +488,40 @@ body {
   text-align: center;
   position: absolute;
 }
+@media (max-width: 767px) {
+  .panelExpertise .expertiseContent {
+    display: none;
+  }
+}
+.panelExpertise .slideProduct {
+  display: none;
+}
+@media (max-width: 767px) {
+  .panelExpertise .slideProduct {
+    display: block;
+  }
+}
+.panelExpertise .slideProduct .owl-theme .owl-controls .owl-page {
+  display: inline-block;
+}
+.panelExpertise .slideProduct .owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 12px;
+}
 
 .contactPanel {
   padding: 3rem 0;
   height: auto;
+}
+@media (max-width: 479px) {
+  .contactPanel {
+    padding: 2rem;
+  }
 }
 .contactPanel .contactForm {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
@@ -509,6 +537,11 @@ body {
 .contactPanel .workWithUs .jumbotron h1 {
   font-size: 3.1rem;
 }
+@media (max-width: 996px) {
+  .contactPanel .workWithUs .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+}
 .contactPanel .workWithUs .jumbotron .form-group {
   font-family: Roboto;
   border-radius: 3px;
@@ -521,18 +554,19 @@ body {
 .contactPanel .workWithUs .jumbotron .form-group textarea.form-control {
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   .contactPanel .workWithUs .jumbotron {
-    padding: 2rem 2rem;
+    padding: 0;
+    margin: 0 1rem;
   }
-  .contactPanel .workWithUs .jumbotron .inputContact {
-    padding-top: 1.5rem;
-    padding-left: 0;
+  .contactPanel .workWithUs .jumbotron .form-group {
+    font-size: 2rem;
   }
 }
-@media (max-width: 994px) {
-  .contactPanel .workWithUs .jumbotron .inputContact h1 {
-    font-size: 2rem;
+@media (max-width: 767px) {
+  .contactPanel .workWithUs .jumbotron {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -558,6 +592,16 @@ body {
   transition: 0.2s;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
+}
+@media (max-width: 1023px) {
+  .panelContent .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .panelContent .content h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 1200px) {
   .panelContent .content p,
@@ -586,6 +630,8 @@ body {
 .contentMobile {
   display: none;
   text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 @media (max-width: 479px) {
   .contentMobile {
@@ -593,12 +639,8 @@ body {
     padding: 2rem 2rem;
   }
 }
-.contentMobile .jumbotron {
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-.contentMobile .jumbotron h1 {
-  font-size: 1.3rem;
+.contentMobile h1 {
+  font-size: 2.5rem;
 }
 
 .panelContent::after {
@@ -640,18 +682,37 @@ footer {
   background-color: #ffffff;
 }
 footer .footerContent {
-  padding-top: 15px;
+  padding: 1rem;
   margin: 0 auto;
+}
+footer .footerContent .map {
+  padding-right: 0;
 }
 footer .footerContent .detailContent .jumbotron {
   padding: 1rem;
   margin: 0;
+  display: flex;
 }
 footer .footerContent .detailContent .jumbotron .logo {
-  padding-right: 20px;
+  padding-right: 2rem;
+}
+footer .footerContent .detailContent .jumbotron .iconSocial img {
+  padding-top: 0.35rem;
 }
 footer .footerContent .detailContent .jumbotron a {
   padding: 0 0.5rem;
+}
+@media (max-width: 991px) {
+  footer .footerContent .detailContent .jumbotron {
+    padding: 2rem 0rem;
+    display: block;
+  }
+  footer .footerContent .detailContent .jumbotron .logo {
+    width: 100%;
+  }
+  footer .footerContent .detailContent .jumbotron .iconSocial {
+    padding-top: 1rem;
+  }
 }
 footer .footerContent .detailContent .smallInformation ul {
   margin-top: 10px;
@@ -711,8 +772,10 @@ footer .footerContent .naviFooter ul li {
 footer .footerContent .smallInformation {
     display: none;
   }
+}
+@media (max-width: 991px) and (min-width: 768px) {
   footer .footerContent .detailContent {
-    padding: 0;
+    padding-left: 2rem;
   }
   footer .footerContent .detailContent .logo {
     padding: 0;
@@ -726,19 +789,14 @@ footer .footerContent .smallInformation {
 }
 @media (max-width: 480px) {
   .btn {
-    padding: 0.1rem 0.5rem;
-    font-size: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 994px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 }
 
