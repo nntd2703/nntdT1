@@ -501,11 +501,6 @@ body {
     display: block;
   }
 }
-.panelExpertise .slideProduct .product h3 {
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-}
-
 .contactPanel {
   padding: 3rem 0;
   height: auto;
@@ -701,9 +696,11 @@ body {
   }
   .productCategory .content .productDetails .list-group-item {
     padding: 0.5rem 3rem;
+    font-size: 0.9rem;
+    font-family: Roboto;
   }
   .productCategory .content .productDetails .active {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -854,7 +851,13 @@ footer .footerContent .smallInformation {
 .jumbotron h5,
 .jumbotron p,
 .jumbotron a {
-  font-family: Roboto;
+  font-family: Roboto !important;
+}
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h4 {
   font-weight: 300;
 }
 
@@ -865,8 +868,9 @@ img {
 
 a,
 p {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 0.8rem;
+  font-family: Roboto !important;
 }
 
 ul li {
