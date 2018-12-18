@@ -103,7 +103,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
+                                    <a class="nav-link" href="./pageDetails/about.html">About Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contact</a>
@@ -469,98 +469,4 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/index.js"></script>
-    <script>
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        window.onload = function () {
-            hideListItemCategory();
-        }
-        window.onscroll = function () {
-            stickNavBar()
-        };
-
-        window.onresize = function () {
-            hideListItemCategory();
-        };
-
-
-        function stickNavBar() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("fixed-top");
-                navbar.classList.add("bg-white");
-            } else {
-                navbar.classList.remove("fixed-top");
-                navbar.classList.remove("bg-white");
-            }
-        };
-
-        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-            }
-            var $subMenu = $(this).next(".dropdown-menu");
-            $subMenu.toggleClass('show');
-
-
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-                $('.dropdown-submenu .show').removeClass("show");
-            });
-            return false;
-        });
-
-        $(document).ready(function () {
-            $(document).click(function (event) {
-                var clickover = $(event.target);
-                var _opened = $(".navbar-collapse").hasClass("show");
-                if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-                    $(".navbar-toggler").click();
-                }
-            });
-        });
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                navigation: true,
-                center: true,
-                lazyLoad: true,
-                dotsSpeed: 1000,
-                items: 1,
-                lazyLoadEager: 1000,
-                smartSpeed: 1000,
-                loop: true,
-                margin: 30,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                scrollPerPage: true,
-                autoPlay: 2500
-            })
-        });
-
-        function hideListItemCategory() {
-            var header = document.getElementsByClassName("headerGroupItem");
-            var itemCollapse = document.getElementsByClassName("listItemCollapse");
-            var contentCategory = document.getElementsByClassName("contentCategory");
-            //console.log(contentCategory)
-            if ($(this).width() <= 767) {
-                //header.setAttribute("data-toggle", "collapse");
-                //header.setAttribute("data-target", "#listItem");
-                //item.classList.add("collapse");
-                for (var i = 0; i < header.length; i++) {
-                    header[i].setAttribute("data-target", "#listItem" + i);
-                    itemCollapse[i].setAttribute("id", "listItem" + i);
-                    itemCollapse[i].classList.add("collapse");
-                }
-                contentCategory[0].classList.add("flex-column")
-            } else {
-                for (var i = 0; i < header.length; i++) {
-                    header[i].removeAttribute("data-target");
-                    itemCollapse[i].removeAttribute("id")
-                    itemCollapse[i].classList.remove("collapse");
-                }
-                contentCategory[0].classList.remove("flex-column")
-            }
-        }
-
-    </script>
 </body>

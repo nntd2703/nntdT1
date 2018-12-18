@@ -116,12 +116,12 @@ body {
             content: "EN";
             padding-left: 30px; //background-color: #005c13;
             color: #ffffff;
-            content: url("./image/en.png");
+            content: url("../image/en.png");
         }
         .onoffswitch4-inner:after {
             content: "VN";
             padding-right: 30px; //background-color: #005c13;
-            content: url("./image/vn.png");
+            content: url("../image/vn.png");
             color: #ffffff;
             text-align: right;
         }
@@ -332,7 +332,7 @@ body {
 }
 
 .panelExpertise {
-    background-image: url("./image/backgroundProduct.jpg");
+    background-image: url("../image/backgroundProduct.jpg");
     .header {
         width: 100%;
         text-align: center;
