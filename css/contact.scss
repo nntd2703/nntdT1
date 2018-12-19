@@ -1,0 +1,80 @@
+body {
+  font-family: Roboto;
+}
+
+.contactFormDetails {
+  padding: 3.5rem 0;
+  height: auto;
+  .form {
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+  @media (max-width: 767px) {
+    padding: 2rem;
+    .form {
+      padding: 1rem;
+    }
+  }
+  .centered {
+    float: none;
+    margin: 100px auto;
+  }
+
+  .form-group {
+    position: relative;
+    padding: 0;
+    .placeholder {
+      position: absolute;
+      top: 7px;
+      left: 12px;
+      color: #B1B1B1;
+      display: none;
+    }
+    label,
+    select {
+      font-wight: normal;
+      color: #B1B1B1;
+    }
+    label:after {
+      content: '*';
+      color: red;
+    }
+    .noneAsterisk:after {
+      content: none;
+    }
+    option {
+      color: #495057;
+    }
+    .dataCountry option[selected]:after {
+      content: "*";
+      color: red;
+    }
+
+    .dataCountry option:after {
+
+      content: "";
+
+    }
+  }
+  .btn {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-weight: 400;
+  }
+
+  .titleField {
+    padding-right: 15px;
+  }
+
+  .imageContactDetails {
+    height: 773px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    .detailsContact {
+      padding-top: 2rem;
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}

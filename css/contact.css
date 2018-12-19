@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto;
+}
+
+.contactFormDetails {
+  padding: 3.5rem 0;
+  height: auto;
+}
+.contactFormDetails .form {
+  padding-left: 0;
+  padding-right: 4rem;
+}
+@media (max-width: 767px) {
+  .contactFormDetails {
+    padding: 2rem;
+  }
+  .contactFormDetails .form {
+    padding: 1rem;
+  }
+}
+.contactFormDetails .centered {
+  float: none;
+  margin: 100px auto;
+}
+.contactFormDetails .form-group {
+  position: relative;
+  padding: 0;
+}
+.contactFormDetails .form-group .placeholder {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  color: #B1B1B1;
+  display: none;
+}
+.contactFormDetails .form-group label,
+.contactFormDetails .form-group select {
+  font-wight: normal;
+  color: #B1B1B1;
+}
+.contactFormDetails .form-group label:after {
+  content: "*";
+  color: red;
+}
+.contactFormDetails .form-group .noneAsterisk:after {
+  content: none;
+}
+.contactFormDetails .form-group option {
+  color: #495057;
+}
+.contactFormDetails .form-group .dataCountry option[selected]:after {
+  content: "*";
+  color: red;
+}
+.contactFormDetails .form-group .dataCountry option:after {
+  content: "";
+}
+.contactFormDetails .btn {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-weight: 400;
+}
+.contactFormDetails .titleField {
+  padding-right: 15px;
+}
+.contactFormDetails .imageContactDetails {
+  height: 773px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.contactFormDetails .imageContactDetails .detailsContact {
+  padding-top: 2rem;
+}
+.contactFormDetails .imageContactDetails .detailsContact p {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=contact.css.map */

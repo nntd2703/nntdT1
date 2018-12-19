@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/outProduct.css">
 </head>
 <body>
 <div class="topBar">
@@ -122,43 +122,30 @@
 <div class="pannelAboutUs">
     <img src="../image/pannelaboutus.jpg"/>
 </div>
-<div class="contentAboutUs">
-    <div class="container">
-        <div class="row">
-            <ol class="breadcrumb w-100">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
-                <li class="active">Data</li>
-            </ol>
-            <div class="aboutUs w-100">
-                <div class="col-12 d-flex justify-content-center">
-                    <h1>ABOUT US</h1>
-                </div>
-                <div class="description text-center"><p>Lorem Ipsum has been the industry's standard dummy text
-                    ever since the
-                    1500s,<br>
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                </div>
-                <div class="contentDetails">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
-                        </div>
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
-                        </div>
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="slideProduct">
+    <div class="slider owl-carousel owl-theme">
+        <div class="product">
+            <h3 class="text-white position-absolute">Raw Cashew Nuts</h3>
+            <img src="../image/group-19-copy.png" alt="">
+        </div>
+        <div class="product">
+            <h3 class="text-white position-absolute">Agricultural
+                Chemical Products</h3>
+            <img src="../image/india1.jpg" alt="">
+        </div>
+        <div class="product">
+            <h3 class="text-white position-absolute">Agricultural
+                Chemical Products</h3>
+            <img src="../image/india1.jpg" alt="">
+        </div>
+        <div class="product">
+            <h3 class="text-white position-absolute">Agricultural
+                Chemical Products</h3>
+            <img src="../image/grain.jpg" alt="">
         </div>
     </div>
 </div>
+
 </body>
 
 <div class="productCategory">
@@ -301,4 +288,23 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/index.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+
+</script>
 </html>

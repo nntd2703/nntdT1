@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
 <div class="topBar">
@@ -122,37 +122,80 @@
 <div class="pannelAboutUs">
     <img src="../image/pannelaboutus.jpg"/>
 </div>
-<div class="contentAboutUs">
+
+<div class="contactFormDetails">
     <div class="container">
-        <div class="row">
-            <ol class="breadcrumb w-100">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
-                <li class="active">Data</li>
-            </ol>
-            <div class="aboutUs w-100">
-                <div class="col-12 d-flex justify-content-center">
-                    <h1>ABOUT US</h1>
-                </div>
-                <div class="description text-center"><p>Lorem Ipsum has been the industry's standard dummy text
-                    ever since the
-                    1500s,<br>
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                </div>
-                <div class="contentDetails">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-12">
+                <form class="jumbotron row form">
+                    <div class="form-group name-group col-4 titleField">
+                        <div class="placeholder">
+                            <label for="name">Title </label>
                         </div>
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
+                        <input type="text" class="form-control" id="title" required>
+                    </div>
+                    <div class="form-group name-group col-8">
+                        <div class="placeholder">
+                            <label for="name">Name </label>
                         </div>
-                        <div class="col-md-4 col-12  text-center">
-                            <img src="../image/fdicompany.PNG">
-                            <div class="descriptionForImage"><p>100% FDI Company</p></div>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="email">Email </label>
                         </div>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="companyName" class="noneAsterisk">Company Name </label>
+                        </div>
+                        <input type="companyName" class="form-control" id="companyName">
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="website" class="noneAsterisk">Website </label>
+                        </div>
+                        <input type="website" class="form-control" id="website">
+                    </div>
+                    <div class="input-group form-group email-group col-12">
+                        <select class="custom-select dataCountry" id="dataCountry">
+                            <option selected class="labelSelected" value="defaultValue" required>Country</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="city">City </label>
+                        </div>
+                        <input type="city" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="mobile">Mobile </label>
+                        </div>
+                        <input type="mobile" class="form-control" id="mobile" required>
+                    </div>
+                    <div class="form-group email-group col-12">
+                        <div class="placeholder">
+                            <label for="describe">Describe Your Buying Requirements in Details </label>
+                        </div>
+                        <textarea type="describe" class="form-control" id="describe" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-5 col-12 imageContactDetails">
+                <div class="jumbotron text-center">
+                    <div class="headerImageContactDetails">
+                        <h2 class="text-uppercase">Contact Us</h2>
+                    </div>
+                    <div class="detailsContact pt-3">
+                        <p class="text-uppercase mb-2">seven hill trading ltd. company</p>
+                        <p class="mb-2">38E Lam Son Street, Ward 2, Tan Binh District, Ho Chi Minh City</p>
+                        <p lass="mb-2">Tax Number: 0314737605</p>
                     </div>
                 </div>
             </div>
@@ -301,4 +344,29 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/index.js"></script>
+<script>
+    $('.placeholder').click(function () {
+        $(this).siblings('input').focus();
+    });
+    $('.form-control').focus(function () {
+        $(this).siblings('.placeholder').hide();
+    });
+    $('.form-control').blur(function () {
+        var $this = $(this);
+        if ($this.val().length == 0)
+            $(this).siblings('.placeholder').show();
+    });
+    $('.form-control').blur();
+
+    var dataCountry = document.getElementById("dataCountry");
+    dataCountry.onchange = function () {
+        if (dataCountry.value !== "defaultValue") {
+            console.log($("#dataCountry option:selected").text());
+            dataCountry.style.color = "#495057";
+        } else {
+            dataCountry.style.color = "#B1B1B1";
+        }
+    }
+
+</script>
 </html>
