@@ -1,0 +1,35 @@
+body {
+  font-family: Roboto;
+}
+
+.titleImage,
+.titleTable {
+  color: #444444;
+  font-weight: 400;
+}
+
+.tableDetailsProduct {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+
+.col {
+  flex: 1;
+}
+
+.contactFor h2 {
+  color: #666666;
+  font-weight: bold;
+}
+.contactFor .btn {
+  padding: 0.375rem 1.75rem;
+}
+
+table .first td {
+  border: none;
+}
+table td:first-child {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=pdp.css.map */
