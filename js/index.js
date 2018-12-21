@@ -290,24 +290,32 @@ $(document).ready(function () {
 
 function hideListItemCategory() {
     var header = document.getElementsByClassName("headerGroupItem");
-    var itemCollapse = document.getElementsByClassName("listItemCollapse");
     var contentCategory = document.getElementsByClassName("contentCategory");
-    //console.log(contentCategory)
+    console.log(header.length)
     if ($(this).width() <= 767) {
         //header.setAttribute("data-toggle", "collapse");
         //header.setAttribute("data-target", "#listItem");
         //item.classList.add("collapse");
         for (var i = 0; i < header.length; i++) {
             header[i].setAttribute("data-target", "#listItem" + i);
-            itemCollapse[i].setAttribute("id", "listItem" + i);
-            itemCollapse[i].classList.add("collapse");
+            var itemCollapse = document.getElementsByClassName("listItemCollapse"+i);
+            if(itemCollapse && itemCollapse.length != 0)
+            {
+                console.log(itemCollapse)
+                itemCollapse[0].setAttribute("id", "listItem" + i);
+                itemCollapse[0].classList.add("collapse");
+            }
         }
         contentCategory[0].classList.add("flex-column")
     } else {
         for (var i = 0; i < header.length; i++) {
             header[i].removeAttribute("data-target");
-            itemCollapse[i].removeAttribute("id")
-            itemCollapse[i].classList.remove("collapse");
+            var itemCollapse = document.getElementsByClassName("listItemCollapse"+i);
+            if(!itemCollapse && itemCollapse.length != 0)
+            {
+                itemCollapse[0].removeAttribute("id")
+                itemCollapse[0].classList.remove("collapse");
+            }
         }
         contentCategory[0].classList.remove("flex-column")
     }

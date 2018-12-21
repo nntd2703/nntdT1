@@ -28,9 +28,13 @@ body {
 }
 
 table {
+  td {
+    font-size: .85rem;
+  }
   .first {
     td {
       border: none;
+      color: #444444;
     }
   }
   td:first-child {

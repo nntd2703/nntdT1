@@ -1,0 +1,37 @@
+.categoryPanel {
+  .header {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #444444;
+    font-size: 3rem;
+  }
+  .slideProduct {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .slideProduct {
+      display: block;
+      p{
+        font-size: 1.5rem;
+      }
+    }
+    .categoryDescription {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+  }
+}

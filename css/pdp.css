@@ -25,8 +25,12 @@ body {
   padding: 0.375rem 1.75rem;
 }
 
+table td {
+  font-size: 0.85rem;
+}
 table .first td {
   border: none;
+  color: #444444;
 }
 table td:first-child {
   font-weight: 500;

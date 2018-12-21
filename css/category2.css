@@ -1,0 +1,36 @@
+.categoryPanel .header {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+  font-size: 3rem;
+}
+.categoryPanel .slideProduct {
+  display: none;
+}
+@media (max-width: 767px) {
+  .categoryPanel .slideProduct {
+    display: block;
+  }
+  .categoryPanel .slideProduct p {
+    font-size: 1.5rem;
+  }
+  .categoryPanel .categoryDescription {
+    display: none;
+  }
+}
+.categoryPanel p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+/*# sourceMappingURL=category2.css.map */
