@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3ea05c-133e-46bd-b888-f6ea9c7c2643" name="Default Changelist" comment="Commit file">
-      <change afterPath="$PROJECT_DIR$/css/pdp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/blackpeper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageDetails/PDP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/outProduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/outProduct.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/outProduct.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/outProduct.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/outProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/outProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageDetails/outProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/pageDetails/outProduct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexwbt.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -99,10 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indexwbt.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="170" column="8" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="170" selection-end-column="8" />
+              <caret line="170" column="8" selection-start-line="168" selection-start-column="4" selection-end-line="170" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -114,15 +109,15 @@
         <entry file="file://$PROJECT_DIR$/css/outProduct.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+              <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pageDetails/PDP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="734">
               <caret line="214" column="38" selection-start-line="214" selection-start-column="28" selection-end-line="214" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
@@ -131,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/pdp.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="620">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -339,7 +334,7 @@
       <workItem from="1543825542443" duration="145000" />
       <workItem from="1543906318331" duration="2005000" />
       <workItem from="1543942613233" duration="32522000" />
-      <workItem from="1544411150478" duration="106460000" />
+      <workItem from="1544411150478" duration="108347000" />
     </task>
     <task id="LOCAL-00001" summary="Commit file">
       <created>1543397299183</created>
@@ -352,12 +347,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147850000" />
+    <option name="totallyTimeSpent" value="149737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12012645" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12012645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,7 +364,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49789253" visible="true" weight="0.26878613" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49789253" visible="true" weight="0.26878613" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021075" side_tool="true" visible="true" weight="0.26878613" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -546,34 +541,34 @@
     <entry file="file://$PROJECT_DIR$/css/outProduct.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/indexwbt.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="170" column="8" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="170" selection-end-column="8" />
+          <caret line="170" column="8" selection-start-line="168" selection-start-column="4" selection-end-line="170" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/pdp.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pageDetails/PDP.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="734">
           <caret line="214" column="38" selection-start-line="214" selection-start-column="28" selection-end-line="214" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/pdp.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
