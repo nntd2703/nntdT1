@@ -2,13 +2,14 @@
 
 h1 {
   font-family: Roboto;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
   color: #444444;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -319,16 +320,11 @@ body {
 
 .panelServies {
   text-align: center;
-  padding-bottom: 3rem;
   .title {
     width: 100%;
-    padding: 5rem;
   }
   .col {
     text-align: center;
-    h3 {
-      padding: 2rem 0;
-    }
   }
 }
 
@@ -348,7 +344,6 @@ body {
     width: 100%;
     .col {
       position: relative;
-      padding-bottom: 3rem;
       h3 {
         font-family: Roboto;
         font-size: 1.3rem;
@@ -356,6 +351,12 @@ body {
         letter-spacing: normal;
         text-align: center;
         position: absolute;
+        @media (max-width: 991px) {
+          top: 3em;
+          width: 75%;
+          font-weight: 500;
+          font-size: 1rem;
+        }
       }
     }
     @media (max-width: 767px) {
@@ -509,7 +510,6 @@ body {
 }
 
 .panelFounder {
-  padding: 3rem 0;
   .image {
     text-align: center;
   }
@@ -531,20 +531,25 @@ body {
   }
 }
 
-
 .productCategory {
-  padding-bottom: 2rem;
   .headerCategory {
-    padding-left: 30px;
     img {
-      width: 100px;
+      width: 80px;
     }
     h2 {
       padding-left: 15px;
       display: inline-block;
       text-transform: uppercase;
       color: #444444;
-      font-weight: 600;
+      font-weight: 500;
+    }
+    @media (max-width: 991px) {
+      img{
+        width: 75px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
     }
     @media (max-width: 767px) {
       padding-top: 1.5rem;
@@ -764,6 +769,22 @@ h1 {
   }
 }
 
+.h3CenterDiv {
+  right: 0;
+  left: 0;
+  min-height: 10em;
+  top: 4em;
+  width: 50%;
+}
+
+.blockCenterdiv {
+  right: 0;
+  left: 0;
+  min-height: 10em;
+  width: 50%;
+  bottom: 10em;
+}
+
 img {
   max-width: 100% !important;
   height: auto !important;
@@ -772,7 +793,7 @@ img {
 a,
 p {
   font-weight: 300;
-  font-size: .8rem;
+  font-size: .7rem;
   font-family: Roboto !important;
 }
 

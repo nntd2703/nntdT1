@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 h1 {
   font-family: Roboto;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
   color: #444444;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -323,17 +324,12 @@ body {
 
 .panelServies {
   text-align: center;
-  padding-bottom: 3rem;
 }
 .panelServies .title {
   width: 100%;
-  padding: 5rem;
 }
 .panelServies .col {
   text-align: center;
-}
-.panelServies .col h3 {
-  padding: 2rem 0;
 }
 
 .panelExpertise {
@@ -354,7 +350,6 @@ body {
 }
 .panelExpertise .expertiseContent .col {
   position: relative;
-  padding-bottom: 3rem;
 }
 .panelExpertise .expertiseContent .col h3 {
   font-family: Roboto;
@@ -363,6 +358,14 @@ body {
   letter-spacing: normal;
   text-align: center;
   position: absolute;
+}
+@media (max-width: 991px) {
+  .panelExpertise .expertiseContent .col h3 {
+    top: 3em;
+    width: 75%;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }
 @media (max-width: 767px) {
   .panelExpertise .expertiseContent {
@@ -523,9 +526,6 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
 }
 
-.panelFounder {
-  padding: 3rem 0;
-}
 .panelFounder .image {
   text-align: center;
 }
@@ -548,21 +548,23 @@ body {
   }
 }
 
-.productCategory {
-  padding-bottom: 2rem;
-}
-.productCategory .headerCategory {
-  padding-left: 30px;
-}
 .productCategory .headerCategory img {
-  width: 100px;
+  width: 80px;
 }
 .productCategory .headerCategory h2 {
   padding-left: 15px;
   display: inline-block;
   text-transform: uppercase;
   color: #444444;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .productCategory .headerCategory img {
+    width: 75px;
+  }
+  .productCategory .headerCategory h2 {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 767px) {
   .productCategory .headerCategory {
@@ -786,6 +788,22 @@ footer .footerContent .smallInformation {
   font-weight: 300;
 }
 
+.h3CenterDiv {
+  right: 0;
+  left: 0;
+  min-height: 10em;
+  top: 4em;
+  width: 50%;
+}
+
+.blockCenterdiv {
+  right: 0;
+  left: 0;
+  min-height: 10em;
+  width: 50%;
+  bottom: 10em;
+}
+
 img {
   max-width: 100% !important;
   height: auto !important;
@@ -794,7 +812,7 @@ img {
 a,
 p {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: Roboto !important;
 }
 
