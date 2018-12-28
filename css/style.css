@@ -380,8 +380,8 @@ body {
     display: block;
   }
 }
-.panelExpertise .slideProduct .widthCustom {
-  width: 42%;
+.panelExpertise .slideProduct h3 {
+  font-size: 1.5rem;
 }
 
 .contactPanel {
