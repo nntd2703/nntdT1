@@ -64,7 +64,6 @@ body {
   padding-right: 15px;
 }
 .contactFormDetails .imageContactDetails {
-  height: 773px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
@@ -73,6 +72,9 @@ body {
 }
 .contactFormDetails .imageContactDetails .detailsContact p {
   font-weight: 500;
+}
+.contactFormDetails .imageContactDetails .jumbotron {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=contact.css.map */

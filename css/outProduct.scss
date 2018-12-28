@@ -29,6 +29,26 @@
 
 .owl-carousel .item {
   text-align: center;
+  img,span {
+    @media (max-width: 767px) {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel .owl-item img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .owl-carousel .nav-btn {
@@ -90,6 +110,5 @@ span.img-text:hover {
 
 @media (max-width: 767px) {
   .nav-btn {
-    display: none;
   }
 }

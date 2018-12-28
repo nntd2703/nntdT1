@@ -19,7 +19,7 @@
         font-family: Roboto;
       }
       @media (max-width: 767px) {
-        width: 85%;
+        width: 90%;
       }
     }
     .contentDetails {
@@ -33,6 +33,18 @@
       }
       .col-12 {
         @media (max-width: 767px) {
+        }
+      }
+      img{
+        width: 100px !important;
+      }
+      .descriptionForImage {
+        width: 50%;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        @media (max-width: 767px) {
+          width: 50%;
         }
       }
     }

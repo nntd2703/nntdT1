@@ -67,7 +67,6 @@ body {
   }
 
   .imageContactDetails {
-    height: 773px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     .detailsContact {
@@ -75,6 +74,9 @@ body {
       p {
         font-weight: 500;
       }
+    }
+    .jumbotron{
+      padding-bottom: 0;
     }
   }
 }

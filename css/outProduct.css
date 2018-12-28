@@ -31,7 +31,26 @@
 .owl-carousel .item {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .owl-carousel .item img, .owl-carousel .item span {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel .owl-item img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .owl-carousel .nav-btn {
   height: 47px;
   position: absolute;
@@ -87,12 +106,6 @@ span.img-text {
 
 span.img-text:hover {
   color: #2caae1;
-}
-
-@media (max-width: 767px) {
-  .nav-btn {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=outProduct.css.map */
